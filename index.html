@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Reais para Dolar</title>
+</head>
+
+<body>
+    <img src="./img/dinheiro.gif" alt="imagem">
+
+    <h1>Conversão de Moedas</h1>
+
+    <div>
+        <p class="digite-abaixo">Digite valores abaixo:</p>
+        <input id="real-input" type="number" placeholder="Valor de reais">
+        <input id="dolar-input" type="number" placeholder="Cotação do Dolar">
+        <br>
+        <p id="cifrao">Valores Convertidos</p>
+
+        <button onclick="calcular()">Converta Aqui</button>
+    </div>
+
+</body>
+<script>
+
+    function calcular() {
+        let real = document.getElementById("real-input").value
+        let dolar = document.getElementById("dolar-input").value
+        let resultado = real / dolar
+        
+        document.getElementById("real-input").value = ""
+        document.getElementById("dolar-input").value = ""
+        document.getElementById("cifrao").innerHTML = "$" + resultado + " dolares"
+
+    }
+</script>
+
+</html>

@@ -7,7 +7,7 @@
 body {
     background: #d34242;
     text-align: center;
-    
+        
 }
 img {
     width: 300px;
@@ -85,4 +85,29 @@ button:hover {
     transform: scale(1.3);
     transition: 0.7s ease-in-out;
     border: 3px solid green;
+}
+@media (min-width: 200px) and (max-width: 1000px) {
+    body {
+        min-width: 650px;
+        text-align: left;
+        margin-left: 20px;
+        background: red;
+                
+    }
+    h1 {
+        color: darkslategrey;
+        min-width: 450px;
+        font-size: 35px;
+        margin-left: 30px;
+    }   
+    div {
+    border: 3px solid darkgoldenrod;        
+    min-width: 450px;
+    margin-left: 10px;
+    max-width: 600px;
+    }    
+    img {
+        margin-left: 40px;
+        width: 50%;
+    }
 }
